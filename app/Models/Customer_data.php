@@ -11,6 +11,7 @@ class Customer_data extends Model
 {
     use HasFactory;
     protected $table = "customer_data";
+    public $timestamps = false;
     function customer(): BelongsTo
     {
         return $this->belongsTo(Customer::class);
